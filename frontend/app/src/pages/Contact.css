@@ -1,0 +1,105 @@
+:root {
+    --primary-color: #180e31;
+  font-family: "Cinzel";
+    --secondary-color: #a99167;
+
+}
+
+.contact-container {
+    display: flex;
+    font-family: "Cinzel";
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10%;
+    color: #180e31;
+    background: transparent; /* Keeping root background */
+}
+
+.contact-form {
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Cinzel";
+}
+
+.input-box label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    background: transparent;
+    color: #180e31;
+}
+
+button {
+    background: var(--secondary-color);
+    color: #f2f1f6;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #180e31;
+    color: var(--primary-color);
+}
+
+/* Right Section Styling */
+.right-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;  
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    ;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-item a {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+/* Map and Info Section Side-by-Side */
+.map-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.map-info {
+    flex: 1;
+    font-size: 1.1rem;
+    padding: 20px;
+    background: white;
+    border-left: 5px solid var(--secondary-color);
+    color: #180e31;
+}
+
+.map {
+    flex: 1;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}

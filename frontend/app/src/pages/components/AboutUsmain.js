@@ -4,7 +4,7 @@ import "./AboutUsmain.css";
 function AboutUs() {
     return (
       <div className="about-section">
-        <div className="about-content">
+        <div style={{color:"#180e31"}}  className="about-content">
           <h3 className="about-title">Our Story</h3>
           <h2 className="about-heading">About Kashvi Creation</h2>
           <p className="about-text">
@@ -24,4 +24,4 @@ function AboutUs() {
     );
   }
 
-export default AboutUs;
+export default AboutUs;

@@ -1,0 +1,106 @@
+/* General Styling */
+.cart-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fdfbff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #180e31;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Wishlist Item Styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cart-item:hover {
+    transform: scale(1.02);
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #180e31;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.cart-item-info h3 {
+    color: #180e31;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+.add-button, .remove-button, .proceed-button {
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.add-button {
+    background-color: #180e31;
+    color: white;
+}
+
+.add-button:hover {
+    background-color: #3b246c;
+}
+
+.remove-button {
+    background-color: #ff4b5c;
+    color: white;
+    margin-left: 10px;
+}
+
+.remove-button:hover {
+    background-color: #d73a4a;
+}
+
+/* Add All to Cart Button */
+.proceed-to-buy {
+    margin-top: 20px;
+}
+
+.proceed-button {
+    background-color: #180e31;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.proceed-button:hover {
+    background-color: #3b246c;
+}
+
+/* Loading & Empty State */
+p {
+    color: #180e31;
+    font-size: 16px;
+    font-weight: 500;
+}

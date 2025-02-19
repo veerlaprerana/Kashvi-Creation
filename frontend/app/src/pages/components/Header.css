@@ -11,9 +11,9 @@
 
 /* Logo */
 .logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--primary-color);
+    font-size: 14px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Navigation Links */
@@ -125,4 +125,5 @@
     }
 
     .icon {
-        font-size:14px;}}
+        font-size: 14px;}
+}

@@ -51,6 +51,7 @@
     max-width: 90%;
     text-align: center;
     padding: 30px;
+    color: #180e31;
   }
 
   .about-image {
@@ -66,15 +67,18 @@
   .about-content {
     max-width: 100%;
     padding: 20px;
+    color: #180e31;
   }
 
   .about-heading {
     font-size: 28px;
+    color: #180e31;
   }
 
   .about-text {
     font-size: 16px;
     line-height: 1.6;
+    color: #180e31;
   }
 
   .about-image {
@@ -96,6 +100,5 @@
   }
 
   .about-image {
-    max-width: 90%;
-  }
+    max-width:90%;}
 }

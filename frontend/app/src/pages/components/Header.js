@@ -1,28 +1,38 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link
 import { FaSearch, FaUser, FaHeart, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom"; 
 import "./Header.css";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="nav-container">
+    <header className="nav-container">
       {/* Hamburger Menu Icon for Mobile */}
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </div>
 
       {/* Navigation Links */}
-      <ul className={`nav-links ${menuOpen ? "show" : ""}`}>
-        <li onClick={() => setMenuOpen(false)}>Home</li>
-        <li onClick={() => setMenuOpen(false)}>Shop</li>
-        <li onClick={() => setMenuOpen(false)}>About</li>
-        <li onClick={() => setMenuOpen(false)}>Blogs</li>
-        <li onClick={() => setMenuOpen(false)}>Contact</li>
+      <ul className={`nav-links ${menuOpen ? "show" : ""}`}>  {/* Fixed syntax */}
+      <li onClick={() => setMenuOpen(false)}>
+    <Link to="/">Home</Link>
+  </li>
+  <li onClick={() => setMenuOpen(false)}>
+    <Link to="/shop">Shop</Link>
+  </li>
+  <li onClick={() => setMenuOpen(false)}>
+    <Link to="/about">About</Link>
+  </li>
+  <li onClick={() => setMenuOpen(false)}>
+    <Link to="/blogs">Blogs</Link>
+  </li>
+  <li onClick={() => setMenuOpen(false)}>
+    <Link to="/contact">Contact</Link>
+  </li>
       </ul>
 
-      {/* Icons with Links */}
+      {/* Icons */}
       <div className="nav-icons">
         <Link to="/search">
           <FaSearch className="icon" title="Search" />
@@ -37,7 +47,7 @@ function Header() {
           <FaShoppingCart className="icon" title="Cart" />
         </Link>
       </div>
-    </div>
+    </header>
   );
 }
 

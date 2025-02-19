@@ -23,4 +23,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Hero;

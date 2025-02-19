@@ -5,7 +5,7 @@ import "./Homepage.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import ProductGrid from "./components/ProductGrid1";
-import ProductGrid2 from "./components/ProducGrid2";
+// import ProductGrid2 from "./components/ProducGrid2";
 import Collection from "./components/Collection";
 import AboutUs from "./components/AboutUsmain";
 import Footer from "./components/Footer";
@@ -32,7 +32,7 @@ function NavLinks() {
   );
 }
 
-function App() {
+function Home() {
   return (
     <div>
       <Navbar />
@@ -40,7 +40,7 @@ function App() {
       <Header/>
       <Hero/>
       <ProductGrid />
-      <ProductGrid2/>
+      {/* <ProductGrid2/> */}
       <Collection/>
       <AboutUs/>
       <Footer/>
@@ -48,4 +48,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

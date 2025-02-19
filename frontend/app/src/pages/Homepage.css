@@ -1,6 +1,7 @@
+
 :root {
   --primary-color: #180e31;
-    --secondary-color: #a99167;
+    --secondary-color: #a99167;
         background-image: url("/public/Bg.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -11,7 +12,7 @@
   
   body {
     --primary-color: #180e31;
-    --secondary-color: #a99167;
+    --secondary-color: #a99167;
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
@@ -111,4 +112,4 @@
     }
   
     .logo {
-      font-size: 20px;}}
+      font-size: 20px;}}

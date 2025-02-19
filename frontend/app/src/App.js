@@ -8,6 +8,12 @@ import Productf from "./pages/Productf";
 import Homepage from "./pages/Homepage";
 import Wishlist from "./pages/Wishlist";
 
+import Contact from "./pages/Contact";
+import BlogPage from "./pages/Blog";
+import About from "./pages/About";
+
+
+
 function App() {
   return (
     <Routes>
@@ -20,6 +26,10 @@ function App() {
       <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       <Route path="/cart" element={<Cart />} /> 
       <Route path="/wishlist" element={<Wishlist />} /> 
+      <Route path="/about" element={<About />} />
+      <Route path="/blogs" element={<BlogPage />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/catalogue" element={<CataloguePage />} />
     </Routes>
   );
 }
