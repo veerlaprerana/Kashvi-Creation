@@ -1,0 +1,10 @@
+# Ignore Firebase service account keys
+/backend/firebase-service-account.json
+/backend/config/firebaseAdmin.js
+
+# Ignore environment variables
+.env
+.env.admin
+
+# Ignore node_modules (already present but ensure it's here)
+node_modules/

@@ -1,0 +1,93 @@
+/* Ensure full height coverage */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-Screen Auth Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures it covers the full viewport height */
+  width: 100vw; /* Ensures full width */
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+}
+
+/* Authentication Box */
+.auth-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Title Styling */
+.auth-title {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.auth-input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.auth-button {
+  width: 100%;
+  padding: 10px;
+  background: #ff758c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-button:hover {
+  background: #e84a5f;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Switch Text */
+.switch-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.switch-link {
+  color: #ff758c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.switch-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 400px) {
+  .auth-box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
